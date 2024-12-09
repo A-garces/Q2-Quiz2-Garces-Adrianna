@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q2 Quiz2</title>
+
+  <!-- Include Bootstrap via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- Nav bar -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+  <div class="container-fluid">
+
+      <!-- links -->
+      <a class="navbar-brand" href="#">
+          <img src="logoict.png" width="100px" alt="Logo" class="logo">
+        </a>
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">H0m3p@ge</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#form">REg1stE@ti0n form</a>
+        </li>
+          
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">CONt@ct uS</a>
+        </li>
+        </ul>
+
+      <form class="d-flex ms-auto">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
+
+      <div>
+         <button class="btn btn-danger" type="submit" id="search">Search</button>
+    </div>
+  </div>
+  </nav>
+
+  <!-- Homepage -->
+  <div id="home" class="container mt-3">
+   <p style="text-align: center;"><img src="https://pixelsafari.neocities.org/favicon/fashion/bow/pink11.gif"> Hello Students! We, the members of the Robotics Club, are now looking for members who is interested to learn more about Programming, Mechanical Design, and such more! We are willing to give those oppoturnities for people to learn. Interested? Sign in our Registration Form! <img src="https://pixelsafari.neocities.org/favicon/fashion/bow/pink11.gif"></p> 
+    <div class="text-center">
+    <img src="Sapphire.png" width="500px" alt="homelogo" class="homelogo">
+    </div>
+    
+  </div>
+
+  <!-- Registration Form  -->
+  <div id="form" class="container">
+    <h1><img src="https://pixelsafari.neocities.org/favicon/fashion/bow/frame3.gif"> Robotics Club Registration Form <img src="https://pixelsafari.neocities.org/favicon/fashion/bow/frame4.gif"></h1>
+
+    <form>
+      <div class="row">
+        <div class="col-md-6">
+        <div>
+          <label for="inputName">Name</label>
+          <input type="text" class="form-control" id="inputName" placeholder="Wh41's y0u4 n@me?">
+        </div>
+
+        <div>
+          <label for="inputEmail">Email Address</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Wh@1 1s y0u4 em@1L?">
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+        <div>
+          <label for="inputAge">Age</label>
+          <input type="number" class="form-control" id="inputAge" placeholder="h0# 0ld arE y02?">
+        </div>
+
+        <div>
+          <label for="inputPhone">Phone Number</label>
+          <input type="tel" class="form-control" id="inputPhone" placeholder="WH@at's Y0uR ph0N3 nu3be4?">
+        </div>
+      </div>
+    </form>
+
+    <div>
+      <p>Preferred Robotics Topics</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="checkbox1" name="checkbox1">
+          <label class="form-check-label" for="checkbox1">Programming</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="checkbox2" name="checkbox2">
+          <label class="form-check-label" for="checkbox2">Electronics</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="checkbox3" name="checkbox3">
+          <label class="form-check-label" for="checkbox3">Mechanical Design</label>
+        </div>
+
+      </div>
+
+      <div class="exp-form">
+        <p>Robotics Experience Level</p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="radio1" name="radio" value="Beginner">
+          <label class="form-check-label" for="radio1">Beginner</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="radio2" name="radio" value="Intermediate">
+          <label class="form-check-label" for="radio2">Intermediate</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="radio3" name="radio" value="Advanced">
+          <label class="form-check-label" for="radio3">Advanced</label>
+        </div>
+
+      </div>
+
+      <div class="preferred-project">
+        <p>Preferred Robotics Project</p>
+            <select class="form-select" id="inputDropdown">
+              <option selected disabled>cH0os3 your f@v0riTe Pr0j3ct...</option>
+              <option value="1">Voice commanded Robot</option>
+              <option value="2">Quadruped Robot</option>
+              <option value="3">AI chatbot interface</option>
+              <option value="4">Facial Recognition Rovot</option>
+          </select>
+      </div>
+
+      <div class="statement">
+        <p>Statement of Interest</p>
+        <textarea class="form-control" id="inputStatement" rows="3"></textarea>
+      </div>
+
+      <div>
+        <button type="submit" class="btn btn-danger">Submit</button>
+      </div>
+  </div>
+</form>
+</div>
+
+<!-- Contact us -->
+<div id="contact" class="container mt-3">
+  <p>If you have any concern, feedback, or comments, feel free to reach out to us!</p>
+  <ul>
+		<li>Email: nine9sapphire@gmail.com</li>
+		<li>Phone Number: 63-244-Sapphire-Garces</li>
+		<li>Address: San juan, Skibidi toilet</li>
+	</ul>
+
+</div>
+
+</body>
+<br/>
+<h4>Made by Adrianna Garces | 9 - Sapphire</h> 
+
+</html>
